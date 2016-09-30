@@ -6,5 +6,5 @@ RuboCop::RakeTask.new
 
 desc 'Run Selenium script'
 task :selenium do
-      ruby "selenium.rb"
+  ruby 'selenium.rb'
 end
