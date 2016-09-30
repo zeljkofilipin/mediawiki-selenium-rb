@@ -1,5 +1,8 @@
 desc 'Run all tasks'
-task default: %w(rubocop selenium spec)
+task default: %w(rubocop selenium spec cucumber)
+
+require 'cucumber/rake/task'
+Cucumber::Rake::Task.new
 
 require 'rubocop/rake_task'
 RuboCop::RakeTask.new
