@@ -9,5 +9,5 @@ RSpec::Core::RakeTask.new
 
 desc 'Run Selenium script'
 task :selenium do
-  ruby 'selenium.rb'
+  ruby 'selenium/main_page.rb'
 end
