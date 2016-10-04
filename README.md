@@ -1,4 +1,4 @@
-# How to write Selenium tests for MediaWiki
+# How to write Selenium tests for MediaWiki using Ruby
 
 This repository holds code used in [Selenium/Ruby](https://www.mediawiki.org/wiki/Selenium/Ruby) wiki page. The code is tested using Travis CI.
 
