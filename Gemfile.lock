@@ -19,6 +19,7 @@ GEM
     diff-lcs (1.2.5)
     ffi (1.9.14)
     gherkin (4.0.0)
+    minitest (5.9.1)
     multi_json (1.12.1)
     multi_test (0.1.2)
     parser (2.3.1.4)
@@ -59,6 +60,7 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber (~> 2.4)
+  minitest (~> 5.9, >= 5.9.1)
   rake (~> 11.3)
   rspec (~> 3.5)
   rubocop (~> 0.43.0)
