@@ -14,4 +14,5 @@ desc 'Run Selenium script'
 task :selenium do
   ruby 'selenium/main_page.rb'
   ruby 'selenium/main_page_watir.rb'
+  ruby 'selenium/main_page_page_object.rb'
 end
