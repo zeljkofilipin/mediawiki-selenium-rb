@@ -13,4 +13,5 @@ RSpec::Core::RakeTask.new
 desc 'Run Selenium script'
 task :selenium do
   ruby 'selenium/main_page.rb'
+  ruby 'selenium/main_page_watir.rb'
 end
