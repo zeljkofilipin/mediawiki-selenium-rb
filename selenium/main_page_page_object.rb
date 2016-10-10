@@ -16,8 +16,7 @@ require 'selenium-webdriver'
 # test
 visit MainPage
 exists = on(MainPage).log_in_element.exists?
-require 'minitest'
-MiniTest::Unit::TestCase.new('').assert(exists)
+raise 'Could not find "Log in" element' unless exists
 
 # teardown
 @browser.quit
