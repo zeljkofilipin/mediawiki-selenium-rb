@@ -1,0 +1,4 @@
+beta: &default
+  mediawiki_url: http://en.wikipedia.beta.wmflabs.org/wiki/
+
+default: *default
