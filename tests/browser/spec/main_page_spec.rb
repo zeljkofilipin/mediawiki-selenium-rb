@@ -1,10 +1,16 @@
-require 'mediawiki_selenium/rspec'
-require 'mediawiki_selenium/pages'
+require 'page-object'
+# page object for Main Page
+class MainPage
+  include PageObject
+  page_url 'Main_Page'
+  a(:log_in, text: 'Log in')
+end
 
-RSpec.describe 'Login page' do
-  it 'should have "Log in" button' do
-    visit(LoginPage) do |page|
-      expect(page.login_element).to exist
+require 'mediawiki_selenium/rspec'
+RSpec.describe 'Main page' do
+  it 'should have "Log in" link' do
+    visit(MainPage) do |page|
+      expect(page.log_in_element).to exist
     end
   end
 end
