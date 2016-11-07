@@ -1,11 +1,11 @@
 require 'selenium-webdriver'
 
 RSpec.describe 'Main Page' do
-  before(:example) do
+  before(:each) do
     @driver = Selenium::WebDriver.for :firefox
   end
 
-  after(:example) do
+  after(:each) do
     @driver.quit
   end
 
