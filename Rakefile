@@ -1,8 +1,13 @@
 desc 'Run all tasks'
-task default: %w(rubocop selenium spec cucumber)
+task default: %w(rubocop selenium spec cucumber mediawiki_selenium_cucumber)
 
 require 'cucumber/rake/task'
 Cucumber::Rake::Task.new
+
+require 'mediawiki_selenium/rake_task'
+MediawikiSelenium::RakeTask.new(
+  name: 'mediawiki_selenium_cucumber', site_tag: false
+)
 
 require 'rubocop/rake_task'
 RuboCop::RakeTask.new
