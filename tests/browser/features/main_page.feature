@@ -1,4 +1,4 @@
-@firefox
+@chrome
 Feature: Main page
 
   Scenario: There is "Log in" link at the main page
