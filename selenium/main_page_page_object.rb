@@ -11,7 +11,7 @@ end
 
 # setup
 require 'selenium-webdriver'
-@browser = Selenium::WebDriver.for :firefox
+@browser = Selenium::WebDriver.for :chrome
 
 # test
 visit MainPage

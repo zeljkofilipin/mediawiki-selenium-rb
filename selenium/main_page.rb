@@ -1,6 +1,6 @@
 # setup
 require 'selenium-webdriver'
-driver = Selenium::WebDriver.for :firefox
+driver = Selenium::WebDriver.for :chrome
 
 # test
 driver.navigate.to 'https://en.wikipedia.beta.wmflabs.org/wiki/Main_Page'

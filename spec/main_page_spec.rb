@@ -2,7 +2,7 @@ require 'selenium-webdriver'
 
 RSpec.describe 'Main Page' do
   before(:each) do
-    @driver = Selenium::WebDriver.for :firefox
+    @driver = Selenium::WebDriver.for :chrome
   end
 
   after(:each) do
