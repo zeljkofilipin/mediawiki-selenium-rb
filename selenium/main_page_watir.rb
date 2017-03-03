@@ -1,6 +1,6 @@
 # setup
 require 'watir'
-driver = Watir::Browser.new :firefox
+driver = Watir::Browser.new :chrome
 
 # test
 driver.goto 'en.wikipedia.beta.wmflabs.org/wiki/Main_Page'
